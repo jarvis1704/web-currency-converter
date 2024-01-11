@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+body {
+  border: 1px solid rgba(124, 159, 111, 0.55);
+  background: rgba(176, 149, 203, 0.685);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  flex-grow: 0;
+  flex-shrink: 1;
+  border-bottom: 1px solid black;
+  height: auto;
+  width: 100%;
+  background-color: rgba(35, 23, 47, 0.618)
+}
+
+.navlinks {
+  align-items: center;
+  flex-basis: 35%;
+}
+
+.navlinks>a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 15px;
+  padding: 0 0.3rem;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.navlinks>a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navlinks>a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navheading {
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10rem;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.navheading>h1 {
+  font-weight: 700;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.sourcecodenav {
+  flex-basis: 30%;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.sourcecodenav>a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 15px;
+  padding: 0 0.3rem;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.sourcecodenav>a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.sourcecodenav>a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+main {
+  height: 68vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  padding: 2rem;
+}
+
+.welcometext {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: black;
+}
+
+button{
+  border: 1px solid rgba(229, 220, 220, 0.86);
+  background-color: rgba(114, 151, 114, 0.63);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+button:hover{
+  background-color: rgba(124, 159, 111, 0.55);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px grey;
+}
+button:active{
+  position: relative;
+  top: 2px;
+}
+.choosebutton {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 15%;
+  margin-top: 5px;
+}
+footer>p{
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+}
+.endnote{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: grey;
+}
+.socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.socials>a{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.socials>a:hover{
+  transform: scale(1.2);
+}
+
+
