@@ -12,10 +12,12 @@
   <meta name="author" content="Biprangshu Das">
   <meta name="copyright" content="Biprangshu Das">
   <meta name="language" content="English">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style2.css">
   <link rel="shortcut icon" href="assets/—Pngtree—money clipart cartoon paper money_5574906.png" type="image/x-icon">
-  <title>Web currency converter</title>
+  <title>INR to AED | Web Currency Converter</title>
 </head>
 
 <body>
@@ -31,23 +33,29 @@
       <h1>Web Currency Converter</h1>
     </div>
     <div class="sourcecodenav">
-      <a href="https://github.com/jarvis1704/web-currency-converter">Check out the source code</a>
+      <a href="">Check out the source code</a>
     </div>
   </nav>
   <main>
-    <section class="welcome">
-      <div class="welcometext">
-        <h1>Welcome to the Web Currency Converter.</h1>
-        <p>
-        <h3>Choose what you want to convert</h3>
-        </p>
+    <section class="converterarea">
+      <div class="converterheading">
+        <h1>INR to AED</h1>
       </div>
-    </section>
-    <section class="choosebutton">
-      <a href="usdtoinr.html" class="choosebtn"><button type="button">USD TO INR</button></a>
-      <a href="inrtoeuro.html" class="choosebtn"><button type="button">INR TO EURO</button></a>
-      <a href="inrtoyen.html" class="choosebtn"><button type="button">INR TO YEN</button></a>
-      <a href="inrtoaed.html" class="choosebtn"><button type="button">INR TO AED</button></a>
+      <div class="converter">
+        <div class="inrinputarea">
+          <label for="inrinput">Enter your amount in INR: </label>
+          <input type="number" name="INR area" id="inrinput" class="INRinput" placeholder="0"
+            autofocus>
+        </div>
+        <span id="or">or</span>
+        <div class="aedinputarea">
+          <label for="yeninput">Enter your amount in AED: </label>
+          <input type="number" name="Yen area" id="aedinput" class="AEDinput" placeholder="0">
+        </div>
+        <div class="outputarea">
+          <p>Your converted Amount is: <br><span class="output"></span></p>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
@@ -61,6 +69,8 @@
         target="_blank"><i class="fa-brands fa-discord"></i></a></p>
     <p class="endnote">&copy; Biprangshu Das 2024</p>
   </footer>
+
+  <script src="inrtoaed.js"></script>
 </body>
 
 </html>
